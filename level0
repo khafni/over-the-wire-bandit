@@ -1,0 +1,5 @@
+this is a pretty trivial exercice where i only needed to to ssh to the server following this format:
+ssh username@address -p port
+where we had the address is bandit.labs.overthewire.org
+the username is bandit0
+and port is 2220
