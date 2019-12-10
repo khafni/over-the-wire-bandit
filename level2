@@ -1,0 +1,10 @@
+to operate on a file that contains space you can either write its first word and hit tab
+or use wildcards
+or use backslashes (escape character) to escape the space special meaning in shell 
+
+propused solutions: 
+cat spaces<tab><CR>
+cat spaces*<CR>
+cat spaces\ in\ this\ filename
+passowrd for level 3:
+UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK

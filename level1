@@ -1,0 +1,8 @@
+in many commands the dash '-' means the standard input stream so manny 
+commands interpret - as the user wanting to read from stdin or write to stdout.
+so if we want to open this type of file we have to specify its path like this ./-
+
+solution:
+cat ./-
+password for next level:
+CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9

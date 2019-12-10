@@ -1,0 +1,9 @@
+here we can find the text among the binary files by combining different commands like this
+find . -type f| xargs file | grep text
+
+find . -type f to output all the files in the current directory and sub directories
+xargs file to apply the command file on every output of the previous command
+grep text to only show the line that contains "text"
+
+password for next level:
+koReBOKuIDDepwhWk7jZC0RTdopnAYKph
