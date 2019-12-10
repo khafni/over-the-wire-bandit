@@ -1,0 +1,13 @@
+*my solution:
+	base64 -d data.txt
+*Explination:
+	the command base64 allows us to encode/decode data and print the output to the standard output	
+	knowing data we can use its -d option to decode the data.txt file that is already encoded in base 64
+*a little note about base 64 encription:
+	Base64 is a way to encode binary data into an ASCII character set known to pretty much every computer system,
+	in order to transmit the data without loss or modification of the contents itself. For example, mail systems cannot
+	deal with binary data because they expect ASCII (textual) data. So if you want to transfer an image or another file,
+	it will get corrupted because of the way it deals with the data.
+	Note: base64 encoding is NOT a way of encrypting, nor a way of compacting data. In fact a base64 encoded piece of data
+	is 1.333… times bigger than the original datapiece. It is only a way to be sure that no data is lost or modified during
+	the transfer.

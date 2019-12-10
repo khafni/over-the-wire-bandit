@@ -1,0 +1,6 @@
+this is an easy one i only needed to use grep to find the line that contains the pattern "millionth"
+in the file data.txt and i did that like this : grep millionth data.txt
+general syntax of grep: grep pattern file
+
+the password for the next level:
+cvX2JJa4CFALtqS87jk27qwqGhBM9plV

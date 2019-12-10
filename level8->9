@@ -1,0 +1,8 @@
+my solution:
+	 sort data.txt | uniq -u
+explination:
+	i found out that uniq -u remove all repeated lines but only if they're adjacent
+	so we need to use the sort command to sort the file data.txt first
+password for the next level:	
+	UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+

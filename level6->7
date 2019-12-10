@@ -1,6 +1,8 @@
 the solution is:
 find . -type f -size 33c -user bandit7 -group bandit6 2>/dev/null | xargs cat
+i reached this solution by looking for a solution to the permission denied lines that i get when i use the find command
 we used the ownership find options -user and -group to only show files owned by user bandit7 and group bandit6
-and we 
-
-the password for next level is : HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+and we 2>/dev/null to send all error messages to the /dev/null (the black hole of your unix system) so we won't be shown out the permission deniend lines by find
+we pipe everything to xargs cat so we can apply cat to lines that find outputs (we have only one line but it could work for the case of multiple lines)
+the password for next level is :
+ HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs

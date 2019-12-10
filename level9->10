@@ -1,0 +1,11 @@
+the solution is:
+	strings data.txt | grep ===== | tail -1 | sed 's/=//g' | tr -d " "
+explination:
+	i needed a way to get the strings of printable characters in the file so i used the command "strings"
+	to achieve that then i pipped its output to grep ==== to get the strings that start with multiple '=' characters
+	now i could see few lines inlcuding the one that contains the password and that's maybe enough to solve the problem
+	but it's not good enough for me so i pipped everything to tail -1 to print the last line only then i pipped its output
+	to sed 's/=//g' to get rid of the '=' characters at the beggining and pipped the output to tr -d " " to get rid of
+	the space at the beggining 
+password for the next level:
+	 truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
