@@ -1,0 +1,6 @@
+the solution is:
+find . -type f -size 33c -user bandit7 -group bandit6 2>/dev/null | xargs cat
+we used the ownership find options -user and -group to only show files owned by user bandit7 and group bandit6
+and we 
+
+the password for next level is : HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs

@@ -1,0 +1,6 @@
+here we will use the same combinition fo commands pipped to each others with a slight difference that
+is adding the -size option to the find command like this : find . -type file -size 1033c
+(c suffix is for bytes)
+so the finished solution is: find . -type f -size 1033c  | xargs file | grep text
+
+and the password for the next level is : DXjZPULLxYr17uwoI01bNLQbtFemEgo7
