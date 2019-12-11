@@ -1,0 +1,18 @@
+*little note about ro13 cipher/ecryption:
+	ROT13 ("rotate by 13 places", sometimes hyphenated ROT-13) is a simple letter substitution cipher that replaces a letter with the 13th letter after it
+
+	A|B|C|D|E|F|G|H|I|J|L|M
+	^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
+	| | | | | | | | | | | |
+    v v v v v v v v v v v v
+	N|O|P|Q|R|S|T|U|V|W|Y|Z
+
+*solution 1:
+	we can use vim rot13 builtin encoding that can be easily found by entering "help rot13" in the command mode
+	(g?{motion}		Rot13 encode {motion} text. {not in Vi}) so we can easily encode/decode a line in vim using the rot 13
+	by hitting g??
+*solution 2:
+	using the tr command (the transliteration utility(turning given characters into other ones)) to substute every character by the 13th character after it like this:
+	tr "A-Ma-mN-Zn-z" "N-Zn-zA-Ma-m"
+*The password for level 12 is:
+	5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu

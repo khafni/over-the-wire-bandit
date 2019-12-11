@@ -11,3 +11,5 @@
 	Note: base64 encoding is NOT a way of encrypting, nor a way of compacting data. In fact a base64 encoded piece of data
 	is 1.333… times bigger than the original datapiece. It is only a way to be sure that no data is lost or modified during
 	the transfer.
+*password for level 11:
+	IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
