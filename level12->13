@@ -1,0 +1,26 @@
+*my solution:
+	here i will explain more of the general method because the boring detailed solution isn't
+	the essense of the exercice, here we have a file that is compressed/archived over and over in with
+	different formats and we need to use different commands to unarchive/uncompress the file over and over
+	untill we find a text file that contains the password.
+	to do that we need to follow the steps:
+		1.use the "file" command on the file every time to know its format if the file isn't a hexdump is it 
+		is a hexdump use the xxd command with -r option to return the file to its original form from the hex 
+		dump to an ASCII form.
+		2. when the format of the compression/archiving is found we need to use the mv command to rename the file
+		so it ends with the a file extension that corresponds to its format 
+		3. we use a command that corresponds with the file format to uncompress/unarchive the file
+	+the command that we can use to return a hexdump to its ASCII/binary format:
+		xxd -r
+	+commands for uncompression/unarchiving:
+		-file format: .gz	-command to unarchive/uncompress it: gzip -d
+		-file format: .bz2	-command to unarchive/uncompress it: bzip2 -d
+		-file format: .tar	-command to unarchive/uncompress it: tar -xvf 
+	+note about the "tar" command:
+		x: Extract Mode
+		v: verbose output (prints a line for each unarchived file. Not needed, but I prefer seeing it. It reassures
+		me that the command worked properly.
+		f: (In Extract Mode) Read from the given archive file ,If you omit this, tar just reads from STDIN.
+		for more infos about the tar command usage check this medium article  https://medium.com/@acparas/the-tar-command-9338c6401ee8
+*the password for level13 is:
+	8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
