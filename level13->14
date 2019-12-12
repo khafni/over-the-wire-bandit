@@ -1,0 +1,13 @@
+*my solution:
+	the only infos that we were given are:
+		+localhost is a hostname that refers to the machine you are working on
+		+you get a private SSH key that can be used to log into the next level
+	so i thought that i could use the ssh command with -i option to use the
+	private ssh key that is given to us to log in an ssh server and use localhost
+	 as the hostaddress and it worked!
+	then after getting in that local server i found the password for the level14 in
+	/etc/bandit_pass/bandit14
+*command used to connect to the bandit14 server:
+	ssh -i sshkey.private -l bandit14 localhost
+*password for level 14:
+	4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
