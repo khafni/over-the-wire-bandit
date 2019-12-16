@@ -1,0 +1,10 @@
+*my solution:
+    in the subject we are told to submit the password of the current level to port
+    30000 on local host.
+    this means we need to send a TCP data packet to the localhost server on port
+    30000 , and this can be done using the nc (netcut) command like this:
+    echo "4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e" | nc localhost 30000 
+*more about netcut:
+    https://medium.com/@tzhenghao/a-gentle-introduction-to-netcat-3e0b105dfbd9
+*password for level15:
+    BfMYroe26WYalil77FoDi9qh59eK5xNr
