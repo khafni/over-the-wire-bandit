@@ -1,0 +1,25 @@
+*my solution:
+	this problem is similar to the previous one , with only one slight difference that we need to use
+	the openssl program to connect and submit the password of the current level to the localhost
+	. so there's no need to learn about the openssl more complicated features of encryption/decryption
+	making private keys... , we only need to use it to connect to a secure server using s_client that is just
+	a tool that comes with openssl that can be used to connect o a secure server , the tool is similar to telnet
+	or nc, in the sense that it handles the ssl/tls layer but allows you to fully control the layers that comes nxt
+	to connect to a server , you need to supply a hostname and a part for example:
+	$ openssl s_client -connect www.feistyduck.com:443
+	so the solution would be: $ openssl s_client -connect localhost:30001
+	then we can past the password of the current level and click enter to get the password for the next level
+*password for level 16:
+	cluFn7wTiGryunymYOu4RcffSxQluehd
+*notes about openssl:
+	OpenSSL is a cryptography toolkit implementing the Secure Sockets Layer (SSL v2/v3) and Transport Layer Security (TLS v1) network protocols and related cryptography standards
+	required by them.
+	The openssl program is a command line tool for using the various cryptography functions of OpenSSL's crypto library from the shell.  It can be used for:
+	o  Creation and management of private keys, public keys and parameters
+	o  Public key cryptographic operations
+	o  Creation of X.509 certificates, CSRs and CRLs
+	o  Calculation of Message Digests
+	o  Encryption and Decryption with Ciphers
+	o  SSL/TLS Client and Server Tests
+	o  Handling of S/MIME signed or encrypted mail
+	o  Time Stamp requests, generation and verification
