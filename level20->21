@@ -1,2 +1,16 @@
-echo "GbKksEFF4yrVs6il55v6gwY5aVje5f0j" | nc -l localhost -p 42945
-./suconnect 42945
+*my solution:
+	in the subject we are told that the setuid binary makes a connection to
+	the localhost on a port we can specify as the binary(execitable)  argument
+	it then reads a line of text from the connection and compraes it to the password
+	of the previous level, that connection can be established using nc (netcut)
+	so we start an nc server and echo to it the password so anyone who get connected
+	to the server will get the password , like this :
+		echo "GbKksEFF4yrVs6il55v6gwY5aVje5f0j" | nc -l localhost -p 42945
+	then we can give the executable the port that we are listening to using the nc server
+	like this :
+		./suconnect 42945
+*extra notes:
+	we use tmux to split the terminal and do both tasks at the same time.
+	sometimes when we specify a port it won't work since maybe it's used by the bandit20 ssh server
+*password for level21:
+	gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr	
