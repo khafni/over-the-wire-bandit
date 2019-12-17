@@ -1,0 +1,15 @@
+*my solution:
+	here we can simply use the command diff to find the difference between passwords.old
+	and password.new like this: 
+		diff passwords.old passwords.new
+	and the output will be:
+		42c42
+		< hlbSBPAWJmL6WFDb06gpTx1pPButblOA
+		---
+		> kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+	which means lines 42 of the passwords.old  needs to change to match line 42 of
+	passwords.new
+*more about the diff command:
+	https://www.computerhope.com/unix/udiff.htm
+*password for level18:
+	kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd

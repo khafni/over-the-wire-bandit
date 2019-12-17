@@ -1,0 +1,11 @@
+*solution1:
+	ssh -t bandit18@bandit.labs.overthewire.org -p 2220 "/bin/bash --norc"
+	with ssh we can execute a command in the server before we open the secure shell in it
+	by just writing the command at the end, so we open a bash new proccess with the --norc
+	option so we open it without caring about the .bashrc file in the home directory but we
+	can't run interactive commands, unless we specify the ssh -t option that force a tty allocation even if ssh has no local tty
+*solution2:
+	ssh -t bandit18@bandit.labs.overthewire.org -p 2220 "/bin/sh"
+	same as solution 1 but we open a proccess of the bourne-Again shell instead
+*password for level 19:
+	IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x

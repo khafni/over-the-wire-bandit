@@ -1,0 +1,16 @@
+*solution:
+	if we run ls -l we can find that the executable user permissions are -rws , the s bit stands for setuid
+	and it simply means that if the user can execute bandit20-do as root, so when we execute it we get the  
+	some root access or at least the original file owner (who created it) access,
+	then we can simply run it and write any other command after it that we want to execute it as another user
+	that have the permission to read /etc/bandit_pass like that:
+		./bandit20-do cat /etc/bandit_pass/bandit20
+*more about setuid:
+	setuid stands for “set user ID on execution”. This permission permits users to run certain programs with 
+	escalated privileges. When a stuid is set for an executable file the users may execute that program with
+	a level of access that matches the user who owns the file. The setuid permission can be viewed by the 
+	“ls –l” command.
+	https://medium.com/@serveradmns.seo/how-to-tune-linux-permission-for-maximum-security-5823c37ffebc
+	https://www.computerhope.com/jargon/s/setuid.htm
+*password for level 20:
+	GbKksEFF4yrVs6il55v6gwY5aVje5f0j
