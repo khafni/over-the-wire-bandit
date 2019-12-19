@@ -1,0 +1,20 @@
+*my solution:
+	+steps:
+		1)cd /etc/cron.d
+		2)cat cronjob_bandit22
+		3)cat /usr/bin/cronjob_bandit22.sh
+		4)cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+	cron is a daemon to execute scheduled commands, aka a program
+	that keeps running from the start of the system in the backround
+	, and it is used to makes routines of running commands/programs
+	and we use the /etc/cron.d/cronjob_bandit22 crontab file
+	(crontabfile consists of commands, one per line, that execute automatically
+	at the time specified by the first five fields at the beginning of
+	each command line. These first five fields, described in the following
+	table, are separated by spaces. They indicate when the command will be
+	executed.)to find which commands/scripts that are executed by the cron daemon
+	we find that there's a script inside it , we check the content of the script
+	we find the name of a file in /tmp we cat the content of the file
+	we find the password!
+*password for level 22:
+	Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI

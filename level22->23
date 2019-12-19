@@ -1,0 +1,19 @@
+*solution:
+	here we only need to read the script that can be easily
+	found following the same steps as the previous level
+	(kinda)
+		#!/bin/bash
+
+		myname=$(whoami)
+		mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
+
+		echo "Copying passwordfile /etc/bandit_pass/$myname to /tmp/$mytarget"
+
+	running the script gives us the following output:
+		Copying passwordfile /etc/bandit_pass/bandit22 to /tmp/8169b67bd894ddbb4412f91573b38db3
+	but we want the password for level23 so we can only change the content of the variable
+	myname in the script to bandit23 and execute the script to get:
+		Copying passwordfile /etc/bandit_pass/bandit23 to /tmp/8ca319486bfbbc3663ea0fbe81326349
+	and checking the content of /tmp/8ca319486bfbbc3663ea0fbe81326349 gives us the password
+*password for level 23:
+	jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
