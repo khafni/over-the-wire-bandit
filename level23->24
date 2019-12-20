@@ -1,0 +1,30 @@
+*my solution:
+	any cronjab that resides in /etc/cron.d/ will be runed
+	so as the "cronjob_bandit24" that just runs the 
+	/usr/bin/cronjob_bandit24.sh script every minute 
+	and that script content gives us a hint which is
+	that all scripts that are in the /var/spool/bandit24
+	are runned and deleted every 60 seconds
+
+		#!/bin/bash                                                                     
+		myname=$(whoami)                                                                        
+		cd /var/spool/$myname                                                                   
+		echo "Executing and deleting all scripts in /var/spool/$myname:"                        
+		for i in * .*;                                                                          
+		do                                                                                      
+		    if [ "$i" != "." -a "$i" != ".." ];                                                 
+		    then                                                                                
+			echo "Handling $i"                                                              
+			timeout -s 9 60 ./$i                                                            
+			rm -f ./$i                                                                      
+		    fi                                                                                  
+		done
+	so we can only put a simple script that get use the password from /etc/bandit_pass/bandit24
+
+		#!/bin/bash
+		cat /etc/bandit_pass/bandit24 >> /tmp/khafni23/password
+	
+	in /var/spool/bandit24 and wait for it to get executed and get voila we get the password!
+
+*password for level24:
+	UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
