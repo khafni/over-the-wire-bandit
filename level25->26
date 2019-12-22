@@ -1,0 +1,22 @@
+*my solution:
+	when we are logged as bandit25 and we do a simple 
+		cat /etc/passwd | grep bandit26
+	(following the instructions that bandit26 use a different shell than bash we trying
+	to  find it out)
+	and for real bandit26 uses /usr/bin/showtext as a shell, when we cat into it we find
+		#!/bin/sh
+
+		export TERM=linux
+
+		more ~/text.txt
+		exit 0	
+	which means that so called shell just uses the command more somehow when we trying to
+	connect to the ssh server .
+	we try to connect to the server it just uses more to show us ~/text.txt file and exits
+	because the more commands shows us the whole file and exits if the file/input is smaller than
+	the actual terminal window, so all we need to stay in the server is to make our terminal window
+	as small as possible before trying to ssh into the server , then we use the v key to enter the default
+	editor of our server session which is vim and use its file explorer to get the password of the level
+	from /etc/bandit_pass/bandit26
+password for level 26:
+	5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z
