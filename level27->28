@@ -1,0 +1,7 @@
+*my solution:
+	here we only need to clone the remote repo using git clone ,
+	but that shall be done inside a dir that we create in the /tmp
+	so we can have permission to clone to there
+
+*password for level 28:
+	0ef186ac70e04ea33b4c1853d2526fa2

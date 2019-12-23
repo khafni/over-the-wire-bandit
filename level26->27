@@ -1,0 +1,10 @@
+*my solution:
+	here we simply uses vim to change the default shell to bash by:
+		:set shell=/bin/bash
+	then we start the shell by 
+		:shell
+	and we found ourself in good old bash to just use the setuidexecutable 
+	to cat the /etc/bandit_pass/bandit27 like this :
+		/bandit27-do cat /etc/bandit_pass/bandit27
+*password for level 27:
+	3ba3118a22e93127a4ed485be72ef5ea
