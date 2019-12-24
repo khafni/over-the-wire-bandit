@@ -1,0 +1,7 @@
+*my solution
+	through reading this article : https://medium.com/flawless-app-stories/useful-git-commands-for-everyday-use-e1a4de64037d
+	i found out i can see the previous commits of a repo and their hash codes using "git log" and using those hash codes
+	we can use "git checkout some_hash_code" to switch our repo to last commit/version
+
+*key for level 29:
+	bbc96594b4e001778eee9975372716b2

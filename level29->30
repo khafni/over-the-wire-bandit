@@ -1,0 +1,12 @@
+*my solution:
+	we can find out that when we cat the README that there's
+	no password in production but that is only in the master
+	branch, not the other branches , so we try to find out
+	the content of the other branches, when we try to checkout
+	the remotes/origin/dev remote branch we find out that 
+	README.md now contains the password!
+*commands used:
+	git branch -a (to list both remote-tracking branches and local branches)
+	git checkout (to switch to another branch)
+*password for level30:
+	5b90576bedb2cc04c86a9e924ce42faf
