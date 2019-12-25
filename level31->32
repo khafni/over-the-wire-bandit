@@ -1,0 +1,6 @@
+*my solution:
+	here we are told in the README that we only need to push a file to the remote repo
+	with details about the file, and that only requires to create that file and push it
+	using git add -f and git commit and git push
+*password for level 32:
+	56a9bf19c63d650ce78e6ec0354ee45e

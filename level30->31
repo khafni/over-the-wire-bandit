@@ -1,0 +1,10 @@
+*my solution:
+	here i will use another git concept which is git tags, that if compared to git commits , 
+	and if we consider commits as history of our branches then tags are bookmarks for our branches
+	but here we only need to list our current branch tags using "git tag" then use git show
+	to see the content of the tag 
+	steps:
+		1)git tag 
+		2)git show secret
+*password for level 31:
+	47e603bb428404d265f59c42920d81e5
